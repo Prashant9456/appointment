@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { Client } from "pg";
 
-export async function POST(request: Request) {
+export async function POST(request:any) {
   // Setup PostgreSQL client
   const client = new Client({
     host: "localhost",
