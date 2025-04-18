@@ -1,5 +1,3 @@
-export const dynamic = "force-dynamic";
-
 import { NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 import { Client } from "pg"
