@@ -4,13 +4,10 @@ import { Client } from "pg";
 
 export async function POST(request:any) {
   // Setup PostgreSQL client
+  const databaseUrl = process.env.DATABASE_URL
   const client = new Client({
-    host: "localhost",
-    port: 5432,
-    user: "postgres",
-    password: "root",
-    database: "postgres",
-  });
+    connectionString: databaseUrl,
+  })
   try {
     console.log("hekedbvjksbndfjksnjkshdfjksdjkfb")
     client.connect();
